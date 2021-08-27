@@ -2,6 +2,7 @@ package com.wfh.menukunmae;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -60,6 +61,22 @@ public class Main4Activity extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
     }
 
+    public void ShowPopupleft(View view) {
+        Log.d("DE-BUGGER", "WORK");
+        TextView txtclose01;
+        Button btnFollow01;
+        myDialog.setContentView(R.layout.custom_dialogleft);
+        txtclose01 = (TextView) myDialog.findViewById(R.id.txtclose01);
+        btnFollow01 = (Button) myDialog.findViewById(R.id.btnFollow01);
+        txtclose01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+        myDialog.show();
+    }
+
     public void ShowPopup(View view) {
         final String URL = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Prayuth_2018_cropped.jpg/220px-Prayuth_2018_cropped.jpg";
         TextView txtclose;
@@ -67,6 +84,10 @@ public class Main4Activity extends AppCompatActivity {
         myDialog.setContentView(R.layout.custom_dialog);
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
         btnFollow = (Button) myDialog.findViewById(R.id.btnFollow);
+        btnFollow.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AnymorePls01Activity.class);
+            startActivity(intent);
+        });
         showImageViaLink(URL);
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,3 +105,4 @@ public class Main4Activity extends AppCompatActivity {
         loadImage.execute(URL);
     }
 }
+

@@ -132,7 +132,7 @@ public class Main3Activity extends AppCompatActivity {
         });
     }
 
-<<<<<<< HEAD
+
     // function to remove an item given its index in the grocery list.
     public static void removeItem(int i) {
         //makeToast("Removed: " + ingredientsList.get(i));
@@ -149,6 +149,6 @@ public class Main3Activity extends AppCompatActivity {
         t.show();
     }
 
-=======
->>>>>>> c1bf13d2dd5bb135ea9fa0933861be4adc8270f5
+
+
 }
