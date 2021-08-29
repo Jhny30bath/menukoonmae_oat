@@ -9,26 +9,27 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="168dp"
+        android:layout_height="57dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="102dp"
+        android:layout_marginBottom="116dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/fridaymedium"
         android:text="เมนูคุณแม่"
         android:textAllCaps="false"
         android:textColor="#ffff"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <android.widget.ImageView
         android:id="@+id/appCompatImageView"
-        android:layout_width="330dp"
-        android:layout_height="632dp"
+        android:layout_width="348dp"
+        android:layout_height="702dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"

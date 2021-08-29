@@ -68,6 +68,10 @@ public class Main4Activity extends AppCompatActivity {
         myDialog.setContentView(R.layout.custom_dialogleft);
         txtclose01 = (TextView) myDialog.findViewById(R.id.txtclose01);
         btnFollow01 = (Button) myDialog.findViewById(R.id.btnFollow01);
+        btnFollow01.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Leftanymorepls.class);
+            startActivity(intent);
+        });
         txtclose01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -53,6 +53,7 @@
         tools:ignore="SpUsage"
         android:onClick="ShowPopupleft"/>
 
+
     <Button
         android:id="@+id/button_btn"
         android:layout_width="0dp"
@@ -68,7 +69,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView7"
